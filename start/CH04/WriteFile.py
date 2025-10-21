@@ -3,8 +3,23 @@
 # By Wendi
 
 #Once information is done save to file called (hackme.txt)
+''''
+with open("hackme.txt", "r") as hackme:
+    content = hackme.read()
+    print(content)
+'''
+#create a list of questions and responses to ask the user
+questions = ["What is your name?",
+"What is your favorite color?",
+"What was your first pet's name?",
+"What is your mother's maiden name?",
+"What elementary school did you attend?"
+]
 
-file_path = "hackme.txt"
+answers = ()
 
-with open(file_path, "w") as file:
-    file.write()
+#loop through each question and save outcome to answers
+for q in questions:
+    ans = input(q)
+    answers.append({ans})
+print(answers)
