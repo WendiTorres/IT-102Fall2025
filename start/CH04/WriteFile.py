@@ -4,11 +4,6 @@
 
 #Once information is done save to file called (hackme.txt)
 
-with open("hackme.txt", "r") as hackme:
-    content = hackme.read()
-    print(content)
-
-
 #create a list of questions and responses to ask the user
 questions = [
 "What is your name?",
@@ -30,5 +25,10 @@ print(answers)
 with open ("hackme.txt", "w") as file:
     for line in answers:
         file.write(line + "\n")
+
+
+with open("hackme.txt", "r") as hackme:
+    content = hackme.read()
+    print(content)  
 
 
